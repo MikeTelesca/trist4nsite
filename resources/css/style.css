@@ -21,8 +21,9 @@ DARK GREEN - #0A100D
 /*NAV BAR */
 
 header {
-  border-bottom: 1px solid Black;
-  background-color: #A22C29;
+  box-shadow: 1px 1px 10px black;
+  background-color: rgba(162, 44, 41, 0.81);
+  opacity: .81;
   position: fixed;
   height: 100px;
   width: 100%;
@@ -60,8 +61,6 @@ nav a {
 
 nav a:hover {
   background-color: #902923;
-  border-radius: 2px;
-  border: 1px white solid ;
 }
 
 /*MAIN*/
