@@ -24,19 +24,23 @@ header {
   box-shadow: 1px 1px 10px black;
   background-color: rgba(162, 44, 41, 0.81);
   opacity: .81;
-  position: fixed;
   height: 100px;
   width: 100%;
   z-index: 1;
-  align-items: center;
+  position: fixed;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 header img {
   height: 140px;
-  padding-left:10px;
   display: block;
-  padding-left: 800px;
+
 
 }
 
@@ -61,6 +65,7 @@ nav a {
 
 nav a:hover {
   background-color: #902923;
+  text-decoration: underline;
 }
 
 /*MAIN*/
