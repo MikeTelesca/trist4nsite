@@ -26,7 +26,7 @@ header {
   opacity: .81;
   height: 100px;
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   position: fixed;
   align-items: center;
 
@@ -36,6 +36,7 @@ header img {
   height: 140px;
   padding-left: 50px;
   display: block;
+  z-index: 99;
 
 
 }
@@ -63,7 +64,10 @@ nav a:hover {
   background-color: #902923;
   text-decoration: underline;
 }
-
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
 /*MAIN*/
 
 #main {
@@ -73,23 +77,44 @@ nav a:hover {
   background-size: cover;
 }
 
-.listenbutton{
-  margin: auto;
-  background-color: #D6D5C9;
-  width:100px;
-  height: 30px;
-  padding: 15px 20px;
-  margin-right: 400px;
-  margin-top: 700px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+/*button*/
+
+.button {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 9px 12px;
+  margin: 0 0 1rem;
+  background-color: #fff;
+  color: #4a1125;
+}
+.button:hover {
+	background-color:#b34332;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 
-.listenbutton a {
-  font-family: Avenir;
-  font-weight: normal;
-  font-size: 15px;
-  text-decoration: none;
+#main.flex-container {
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: row
+     flex-direction: row;
+     -webkit-align-items: center;
+     align-items: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     z-index: 1;
+
+
+
 }
