@@ -36,7 +36,7 @@ header img {
   height: 140px;
   padding-left: 50px;
   display: block;
-  z-index: 99;
+  z-index: 50;
 
 
 }
@@ -54,15 +54,16 @@ nav span {
 
 nav a {
   color: white;
-  font-family: Avenir;
+  font-family: Avenir Next;
   font-weight: normal;
   text-decoration: none;
   font-size: 20px;
 }
 
 nav a:hover {
-  background-color: #902923;
-  text-decoration: underline;
+  color: #902923;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  text-decoration: none;
 }
 .flex-container{
   display: flex;
@@ -71,7 +72,7 @@ nav a:hover {
 /*MAIN*/
 
 #main {
-  height: 1000px;
+  height: 700px;
   width: 100%;
   background-image: url("../../resources/images/mainbgtristan.png");
   background-size: cover;
@@ -88,16 +89,17 @@ nav a:hover {
   cursor: pointer;
   appearance: none;
   transition: background-color .25s ease-out,color .25s ease-out;
-  vertical-align: middle;
+  vertical-align: mid;
   border: 1px solid transparent;
   border-radius: 0;
   padding: 9px 12px;
   margin: 0 0 1rem;
-  background-color: #fff;
-  color: #4a1125;
+  background-color: #b34332;
+  margin-top: 360px;
+  margin-right:251px;
 }
 .button:hover {
-	background-color:#b34332;
+	background-color: white;
 }
 .button:active {
 	position:relative;
@@ -108,9 +110,6 @@ nav a:hover {
      display: flex;
      flex-direction: row;
      align-items: center;
-     justify-content: center;
+     justify-content: flex-end;
      z-index: 1;
-
-
-
 }
