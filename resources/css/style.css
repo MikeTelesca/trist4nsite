@@ -86,7 +86,7 @@ nav a:hover {
   text-align: center;
   line-height: 1;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   transition: background-color .25s ease-out,color .25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
@@ -105,13 +105,9 @@ nav a:hover {
 }
 
 #main.flex-container {
-     display: -webkit-flex;
      display: flex;
-     -webkit-flex-direction: row
      flex-direction: row;
-     -webkit-align-items: center;
      align-items: center;
-     -webkit-justify-content: center;
      justify-content: center;
      z-index: 1;
 
